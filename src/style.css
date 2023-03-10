@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Testimonial Nav Start */
+
+#testimonial-carousel {
+  @apply md:grid md:grid-cols-3 gap-5;
+}
+
+#testimonial-carousel  > div.owl-stage-outer{
+  @apply md:col-start-1 md:col-end-3;
+}
+
+#testimonial-carousel  .owl-nav {
+    @apply  w-full overflow-hidden py-5 md:py-0 md:-top-4 space-x-4 md:space-x-0 md:space-y-4 flex md:flex-col md:left-0 justify-center items-center -bottom-5   relative;
+    
+  }
+
+
+
+  .owl-carousel .owl-nav .owl-prev {
+    @apply  flex  text-center justify-center items-center p-3  bg-black text-white rounded-full h-10 w-10;
+  }
+  
+  .owl-carousel .owl-nav .owl-next {
+    @apply  flex shadow-2xl  text-center justify-center items-center p-3  bg-white text-black rounded-full h-10 w-10;
+  } 
+
+
+    /* Blog Nav Start */
+
+    #blog-carousel  .owl-nav {
+      @apply  w-full overflow-hidden py-5 flex  justify-center items-center -bottom-20 lg:-top-[120px] lg:-left-[160%] xl:-top-[50px]  xl:-left-[100%] absolute space-x-4   ;
+  
+    }
+
+    #blog-carousel  .owl-nav .owl-prev,  #blog-carousel  .owl-nav .owl-next {
+      @apply  flex  text-center justify-center items-center p-5 border bg-transparent shadow-none  text-gray-500 rounded-full h-10 w-10;
+    }
+    
+
+
+
+  .showMenu{
+    @apply transform  translate-y-0 ;
+  }
+  
